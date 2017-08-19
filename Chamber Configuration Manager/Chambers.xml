@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<allChambers>
+  <chamber>
+    <chamberId>1</chamberId>
+    <toolConfig>MultiChamber1</toolConfig>
+    <chamberLoc>B</chamberLoc>
+    <chamberConfig>
+      <chamberType>APF</chamberType>
+      <gaspanel>testAPFGP</gaspanel>
+      <gaslineHeater>Configured</gaslineHeater>
+      <hfGenerator>ECat HF Old</hfGenerator>
+      <lfGenerator>LPD something</lfGenerator>
+      <rfMatch>Dual Match</rfMatch>
+      <rps>Configured</rps>
+      <eChuck>Configured</eChuck>
+      <commonManifoldHeater>configured</commonManifoldHeater>
+      <divertPump>not configured</divertPump>
+      <divertPressGauge>not configured</divertPressGauge>
+      <rpsIsoValve>not configured</rpsIsoValve>
+      <manifoldHeater>not configured</manifoldHeater>
+      <inlineDevice>configured?</inlineDevice>
+      <excurDetect>whatever</excurDetect>
+      <tcPurge>filler</tcPurge>
+      <filterIsoValves>maybe</filterIsoValves>
+      <shadowRing>blah</shadowRing>
+    </chamberConfig>
+  </chamber>
+  <chamber>
+    <chamberId>2</chamberId>
+    <toolConfig>MultiChamber1</toolConfig>
+    <chamberLoc>C</chamberLoc>
+    <chamberConfig>
+      <chamberType>APF</chamberType>
+      <gaspanel>testAPFGP</gaspanel>
+      <gaslineHeater>Configured</gaslineHeater>
+      <hfGenerator>ECat HF Old</hfGenerator>
+      <lfGenerator>LPD something</lfGenerator>
+      <rfMatch>Dual Match</rfMatch>
+      <rps>Configured</rps>
+      <eChuck>Configured</eChuck>
+      <commonManifoldHeater>configured</commonManifoldHeater>
+      <divertPump>not configured</divertPump>
+      <divertPressGauge>not configured</divertPressGauge>
+      <rpsIsoValve>not configured</rpsIsoValve>
+      <manifoldHeater>not configured</manifoldHeater>
+      <inlineDevice>configured?</inlineDevice>
+      <excurDetect>whatever</excurDetect>
+      <tcPurge>filler</tcPurge>
+      <filterIsoValves>maybe</filterIsoValves>
+      <shadowRing>blah</shadowRing>
+    </chamberConfig>
+  </chamber>
+</allChambers>

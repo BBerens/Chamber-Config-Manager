@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="allChambers">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name ="chamber">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="chamberId" type="xsd:int"/>
+              <xsd:element name="toolConfig" type="xsd:string"/>
+              <xsd:element name="chamberLoc" type="xsd:string"/>
+        
+              <xsd:element name ="chamberConfig">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="chamberType" type="xsd:string"/>
+                    <xsd:element name="gaspanel" type="xsd:string"/>
+                    <xsd:element name="gaslineHeater" type="xsd:string"/>
+                    <xsd:element name="hfGenerator" type="xsd:string"/>
+                    <xsd:element name="lfGenerator" type="xsd:string"/>
+                    <xsd:element name="rfMatch" type="xsd:string"/>
+                    <xsd:element name="rps" type ="xsd:string"/>
+                    <xsd:element name="eChuck" type="xsd:string"/>
+                    <xsd:element name="commonManifoldHeater" type="xsd:string"/>
+                    <xsd:element name="divertPump" type="xsd:string"/>
+                    <xsd:element name="divertPressGauge" type="xsd:string"/>
+                    <xsd:element name="rpsIsoValve" type="xsd:string"/>
+                    <xsd:element name="manifoldHeater" type="xsd:string"/>
+                    <xsd:element name="inlineDevice" type="xsd:string"/>
+                    <xsd:element name="excurDetect" type="xsd:string"/>
+                    <xsd:element name="tcPurge" type="xsd:string"/>
+                    <xsd:element name="filterIsoValves" type="xsd:string"/>
+                    <xsd:element name="shadowRing" type="xsd:string"/>              
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+        
+            </xsd:sequence>      
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
