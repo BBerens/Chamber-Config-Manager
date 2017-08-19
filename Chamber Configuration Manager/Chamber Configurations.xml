@@ -1,0 +1,2761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="Chamber Configurations">
+  <Parameters>
+    <Parameter id="0" name="ChamberType" type="1">
+      <values>
+        <value>Staircase</value>
+        <value>GeronimoBase</value>
+        <value>GeronimoAPF</value>
+        <value>TCVD</value>
+        <value>BDIIX</value>
+        <value>PrecisionTEOS</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="1" name="Gaspanel" type="1">
+      <values>
+        <value>APF 0080-07856</value>
+        <value>APF 0080-08369</value>
+        <value>APF 0080-08495</value>
+        <value>APF 0080-09174</value>
+        <value>APF 0080-17364</value>
+        <value>APF 0080-18429</value>
+        <value>APF 0080-18550</value>
+        <value>APF 0080-18640</value>
+        <value>APF 0080-18790</value>
+        <value>APF 0080-18885</value>
+        <value>APF 0080-18969</value>
+        <value>APF 0080-19094</value>
+        <value>Base Staircase</value>
+        <value>Staircase 0080-426816</value>
+        <value>Staircase 0080-07738</value>
+        <value>Staircase 0080-17914</value>
+        <value>Staircase 0080-17915</value>
+        <value>Staircase 0080-18842</value>
+        <value>Staircase 0080-18883</value>
+        <value>Staircase 0080-18904</value>
+        <value>Staircase 0080-19050</value>
+        <value>Staircase 0080-19146</value>
+        <value>Thermal CVD 0080-18621</value>
+        <value>Precision TEOS 0080-18696</value>
+        <value>Precision BDIIX 0080-18787</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="CommonManifoldHeater" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="3" name="GasLineHeater" type="1">
+      <values>
+        <value>Not Configured</value>
+        <value>GasLineHeaterETM</value>
+        <value>GasLineHeaterETMNoOverTemp</value>
+        <value>GasLineHeaterWatlow</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="4" name="DivertPump" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="5" name="MFV" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="6" name="HFGenerator" type="1">
+      <values>
+        <value>Not Configured</value>
+        <value>RFGen ECat Old</value>
+        <value>RFGen ECat</value>
+        <value>RFGen ECat w/ Arc Management</value>
+        <value>RFGen ECat G2</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="7" name="LFGenerator" type="1">
+      <values>
+        <value>Not Configured</value>
+        <value>CRFGenPDX</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="8" name="RPSISOValve" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="9" name="RPS" type="1">
+      <values>
+        <value>Not Configured</value>
+        <value>RPSWithPowerSP</value>
+        <value>RPSWithPowerSPNoFlt</value>
+        <value>RPSWithPowerSPAndEnable</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="10" name="Lift" type="1">
+      <values>
+        <value>Lift</value>
+        <value>VarSpeedLift</value>
+        <value>3AxisLift</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="13" name="ManifoldHeater" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="14" name="VacChuck" type="1">
+      <values>
+        <value>Not Configured</value>
+        <value>VacChuck</value>
+        <value>GeronimoVacChuck</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="15" name="EChuck" type="1">
+      <values>
+        <value>Not Configured</value>
+        <value>EChuck</value>
+        <value>HVEChuck</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="16" name="InlineDevice" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="17" name="IWR" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="18" name="ShadowRing" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="(ChamberType = &quot;BDIIX&quot;) =&gt; (Gaspanel = &quot;Precision BDIIX 0080-18787&quot;)">
+      <Parameters>
+        <Parameter name="ChamberType" />
+        <Parameter name="Gaspanel" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(ChamberType = &quot;Staircase&quot;) =&gt; (Gaspanel = &quot;Base Staircase&quot; || Gaspanel = &quot;Staircase 0080-426816&quot; || Gaspanel = &quot;Staircase 0080-07738&quot; || Gaspanel = &quot;Staircase 0080-17914&quot; || Gaspanel = &quot;Staircase 0080-17915&quot; || Gaspanel = &quot;Staircase 0080-18842&quot; || Gaspanel = &quot;Staircase 0080-18883&quot; || Gaspanel = &quot;Staircase 0080-18904&quot;|| Gaspanel = &quot;Staircase 0080-19050&quot;|| Gaspanel = &quot;Staircase 0080-19146&quot;)">
+      <Parameters>
+        <Parameter name="ChamberType" />
+        <Parameter name="Gaspanel" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(ChamberType = &quot;GeronimoAPF&quot;) =&gt; (Gaspanel = &quot;APF 0080-07856&quot; || Gaspanel = &quot;APF 0080-08369&quot; || Gaspanel = &quot;APF 0080-08495&quot; || Gaspanel = &quot;APF 0080-09174&quot; || Gaspanel = &quot;APF 0080-17364&quot; || Gaspanel = &quot;APF 0080-18429&quot; || Gaspanel = &quot;APF 0080-18550&quot; || Gaspanel = &quot;APF 0080-18640&quot; || Gaspanel = &quot;APF 0080-18790&quot; || Gaspanel = &quot;APF 0080-18885&quot; || Gaspanel = &quot;APF 0080-18969&quot; || Gaspanel = &quot;APF 0080-19094&quot;)">
+      <Parameters>
+        <Parameter name="ChamberType" />
+        <Parameter name="Gaspanel" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(ChamberType = &quot;PrecisionTEOS&quot;) =&gt; (Gaspanel = &quot;Precision TEOS 0080-18696&quot;)">
+      <Parameters>
+        <Parameter name="ChamberType" />
+        <Parameter name="Gaspanel" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Gaspanel = &quot;Thermal CVD 0080-18621&quot;) =&gt; (ChamberType = &quot;TCVD&quot;)">
+      <Parameters>
+        <Parameter name="Gaspanel" />
+        <Parameter name="ChamberType" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Gaspanel = &quot;Precision BDIIX 0080-18787&quot;) =&gt; (ChamberType=&quot;BDIIX&quot;)">
+      <Parameters>
+        <Parameter name="Gaspanel" />
+        <Parameter name="ChamberType" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(Gaspanel = &quot;Precision TEOS 0080-18696&quot;) =&gt; (ChamberType = &quot;PrecisionTEOS&quot;)">
+      <Parameters>
+        <Parameter name="Gaspanel" />
+        <Parameter name="ChamberType" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(ChamberType = &quot;TCVD&quot;) =&gt; (Gaspanel = &quot;Thermal CVD 0080-18621&quot;)">
+      <Parameters>
+        <Parameter name="ChamberType" />
+        <Parameter name="Gaspanel" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-07856</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-07856</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-08369</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="3">
+      <Value>4</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-08369</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="4">
+      <Value>5</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-08495</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="5">
+      <Value>6</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-08495</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="6">
+      <Value>7</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-09174</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="7">
+      <Value>8</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-09174</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="8">
+      <Value>9</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-17364</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="9">
+      <Value>10</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-17364</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="10">
+      <Value>11</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18429</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="11">
+      <Value>12</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18429</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="12">
+      <Value>13</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18550</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="13">
+      <Value>14</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18550</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="14">
+      <Value>15</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18640</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="15">
+      <Value>16</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18640</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="16">
+      <Value>17</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18790</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="17">
+      <Value>18</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18790</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="18">
+      <Value>19</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18885</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="19">
+      <Value>20</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18885</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="20">
+      <Value>21</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18969</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="21">
+      <Value>22</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18969</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="22">
+      <Value>23</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-19094</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="23">
+      <Value>24</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-19094</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="24">
+      <Value>25</Value>
+      <Value>Staircase</Value>
+      <Value>Base Staircase</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="25">
+      <Value>26</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Base Staircase</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="26">
+      <Value>27</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-426816</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="27">
+      <Value>28</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-426816</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="28">
+      <Value>29</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-07738</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="29">
+      <Value>30</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-07738</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="30">
+      <Value>31</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-17914</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="31">
+      <Value>32</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-17914</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="32">
+      <Value>33</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-17915</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="33">
+      <Value>34</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-17915</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="34">
+      <Value>35</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-18842</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="35">
+      <Value>36</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-18842</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="36">
+      <Value>37</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-18883</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="37">
+      <Value>38</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-18883</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="38">
+      <Value>39</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-18904</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="39">
+      <Value>40</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-18904</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="40">
+      <Value>41</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-19050</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="41">
+      <Value>42</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-19050</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="42">
+      <Value>43</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-19146</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="43">
+      <Value>44</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-19146</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="44">
+      <Value>45</Value>
+      <Value>TCVD</Value>
+      <Value>Thermal CVD 0080-18621</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="45">
+      <Value>46</Value>
+      <Value>PrecisionTEOS</Value>
+      <Value>Precision TEOS 0080-18696</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="46">
+      <Value>47</Value>
+      <Value>BDIIX</Value>
+      <Value>Precision BDIIX 0080-18787</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="47">
+      <Value>48</Value>
+      <Value>BDIIX</Value>
+      <Value>Precision BDIIX 0080-18787</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="48">
+      <Value>49</Value>
+      <Value>PrecisionTEOS</Value>
+      <Value>Precision TEOS 0080-18696</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="49">
+      <Value>50</Value>
+      <Value>TCVD</Value>
+      <Value>Thermal CVD 0080-18621</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="50">
+      <Value>51</Value>
+      <Value>BDIIX</Value>
+      <Value>Precision BDIIX 0080-18787</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="51">
+      <Value>52</Value>
+      <Value>TCVD</Value>
+      <Value>Thermal CVD 0080-18621</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="52">
+      <Value>53</Value>
+      <Value>PrecisionTEOS</Value>
+      <Value>Precision TEOS 0080-18696</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="53">
+      <Value>54</Value>
+      <Value>TCVD</Value>
+      <Value>Thermal CVD 0080-18621</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="54">
+      <Value>55</Value>
+      <Value>BDIIX</Value>
+      <Value>Precision BDIIX 0080-18787</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="55">
+      <Value>56</Value>
+      <Value>PrecisionTEOS</Value>
+      <Value>Precision TEOS 0080-18696</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="56">
+      <Value>57</Value>
+      <Value>TCVD</Value>
+      <Value>Thermal CVD 0080-18621</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="57">
+      <Value>58</Value>
+      <Value>BDIIX</Value>
+      <Value>Precision BDIIX 0080-18787</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="58">
+      <Value>59</Value>
+      <Value>PrecisionTEOS</Value>
+      <Value>Precision TEOS 0080-18696</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="59">
+      <Value>60</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-07856</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="60">
+      <Value>61</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-08369</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="61">
+      <Value>62</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-09174</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="62">
+      <Value>63</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18429</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="63">
+      <Value>64</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18550</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="64">
+      <Value>65</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18790</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="65">
+      <Value>66</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18969</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="66">
+      <Value>67</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-19094</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="67">
+      <Value>68</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-426816</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="68">
+      <Value>69</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-17914</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="69">
+      <Value>70</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-17915</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="70">
+      <Value>71</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-18883</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="71">
+      <Value>72</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-19050</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="72">
+      <Value>73</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-19146</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="73">
+      <Value>74</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-08369</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="74">
+      <Value>75</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-09174</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="75">
+      <Value>76</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-17364</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="76">
+      <Value>77</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18550</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="77">
+      <Value>78</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18790</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="78">
+      <Value>79</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18885</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="79">
+      <Value>80</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-19094</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="80">
+      <Value>81</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-426816</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="81">
+      <Value>82</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-07738</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="82">
+      <Value>83</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-17915</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="83">
+      <Value>84</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-18883</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="84">
+      <Value>85</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-18904</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="85">
+      <Value>86</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-19146</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat Old</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="86">
+      <Value>87</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-08369</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="87">
+      <Value>88</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-08495</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="88">
+      <Value>89</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-17364</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="89">
+      <Value>90</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18550</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="90">
+      <Value>91</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18640</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="91">
+      <Value>92</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18885</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="92">
+      <Value>93</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-19094</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="93">
+      <Value>94</Value>
+      <Value>Staircase</Value>
+      <Value>Base Staircase</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="94">
+      <Value>95</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-07738</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="95">
+      <Value>96</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-17915</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="96">
+      <Value>97</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-18842</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="97">
+      <Value>98</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-18904</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="98">
+      <Value>99</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-19146</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="99">
+      <Value>100</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-07856</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="100">
+      <Value>101</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-08495</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="101">
+      <Value>102</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-17364</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="102">
+      <Value>103</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18429</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="103">
+      <Value>104</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18640</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="104">
+      <Value>105</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18885</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="105">
+      <Value>106</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18969</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="106">
+      <Value>107</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Base Staircase</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="107">
+      <Value>108</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-07738</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="108">
+      <Value>109</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-17914</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="109">
+      <Value>110</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-18842</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="110">
+      <Value>111</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-18904</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="111">
+      <Value>112</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-19050</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat w/ Arc Management</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>3AxisLift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="112">
+      <Value>113</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-07856</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="113">
+      <Value>114</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-08495</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="114">
+      <Value>115</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-09174</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="115">
+      <Value>116</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18429</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="116">
+      <Value>117</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18640</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="117">
+      <Value>118</Value>
+      <Value>GeronimoBase</Value>
+      <Value>APF 0080-18790</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>true</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="118">
+      <Value>119</Value>
+      <Value>GeronimoAPF</Value>
+      <Value>APF 0080-18969</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>VarSpeedLift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="119">
+      <Value>120</Value>
+      <Value>Staircase</Value>
+      <Value>Base Staircase</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPNoFlt</Value>
+      <Value>3AxisLift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="120">
+      <Value>121</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-426816</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterETMNoOverTemp</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>GeronimoVacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="121">
+      <Value>122</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-17914</Value>
+      <Value>true</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>VacChuck</Value>
+      <Value>HVEChuck</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+    </Testcase>
+    <Testcase TCNo="122">
+      <Value>123</Value>
+      <Value>Staircase</Value>
+      <Value>Staircase 0080-18842</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterETM</Value>
+      <Value>true</Value>
+      <Value>true</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>CRFGenPDX</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>EChuck</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="123">
+      <Value>124</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-18883</Value>
+      <Value>false</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>RPSWithPowerSPAndEnable</Value>
+      <Value>Lift</Value>
+      <Value>false</Value>
+      <Value>Not Configured</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+    <Testcase TCNo="124">
+      <Value>125</Value>
+      <Value>GeronimoBase</Value>
+      <Value>Staircase 0080-19050</Value>
+      <Value>true</Value>
+      <Value>GasLineHeaterWatlow</Value>
+      <Value>false</Value>
+      <Value>false</Value>
+      <Value>RFGen ECat G2</Value>
+      <Value>Not Configured</Value>
+      <Value>true</Value>
+      <Value>RPSWithPowerSP</Value>
+      <Value>Lift</Value>
+      <Value>true</Value>
+      <Value>VacChuck</Value>
+      <Value>Not Configured</Value>
+      <Value>false</Value>
+      <Value>true</Value>
+      <Value>false</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>CHAMBERTYPE</Value>
+    <Value>GASPANEL</Value>
+    <Value>COMMONMANIFOLDHEATER</Value>
+    <Value>GASLINEHEATER</Value>
+    <Value>DIVERTPUMP</Value>
+    <Value>MFV</Value>
+    <Value>HFGENERATOR</Value>
+    <Value>LFGENERATOR</Value>
+    <Value>RPSISOVALVE</Value>
+    <Value>RPS</Value>
+    <Value>LIFT</Value>
+    <Value>MANIFOLDHEATER</Value>
+    <Value>VACCHUCK</Value>
+    <Value>ECHUCK</Value>
+    <Value>INLINEDEVICE</Value>
+    <Value>IWR</Value>
+    <Value>SHADOWRING</Value>
+  </Header>
+  <Stat-Data>
+    <ExecutionTime>0.077</ExecutionTime>
+    <MaxDomainSize>25</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>2027</TotalNoOfCombination>
+    <TotalNoOfTests>125</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+
