@@ -11,16 +11,16 @@ namespace Chamber_Configuration_Manager
     class ChamberConfig
     {
         public IEnumerator configAttributes;
-        public int chamberId;
-        public string toolConfig;
+        public string chamberId;
+        public string toolId;
         public string chamberLoc;
         public XmlNode xmlNode;
         public List<string[]> chamberAttributes = new List<string[]>();
 
         public ChamberConfig(XmlNode node)
         {
-            chamberId = Convert.ToInt32(node["chamberId"].InnerText);
-            toolConfig = node["toolConfig"].InnerText;
+            chamberId = node["chamberId"].InnerText;
+            toolId= node["toolId"].InnerText;
             chamberLoc = node["chamberLoc"].InnerText;
             configAttributes =node["chamberConfig"].GetEnumerator();
             while(configAttributes.MoveNext())

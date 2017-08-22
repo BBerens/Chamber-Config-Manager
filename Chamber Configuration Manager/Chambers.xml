@@ -2,8 +2,8 @@
 <allChambers>
   <chamber>
     <chamberId>1</chamberId>
-    <toolConfig>MultiChamber1</toolConfig>
-    <chamberLoc>B</chamberLoc>
+    <toolId></toolId>
+    <chamberLoc></chamberLoc>
     <chamberConfig>
       <chamberType>APF</chamberType>
       <gaspanel>testAPFGP</gaspanel>
@@ -27,7 +27,7 @@
   </chamber>
   <chamber>
     <chamberId>2</chamberId>
-    <toolConfig>MultiChamber1</toolConfig>
+    <toolId>MultiChamber1</toolId>
     <chamberLoc>C</chamberLoc>
     <chamberConfig>
       <chamberType>APF</chamberType>
