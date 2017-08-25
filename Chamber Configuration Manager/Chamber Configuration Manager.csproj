@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ChamberCollection.cs" />
     <Compile Include="ChamberConfig.cs" />
+    <Compile Include="ImportParse.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +67,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\ChamberCollection.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
     <None Include="temp\ChamberSchema.xsd">
       <SubType>Designer</SubType>
     </None>
