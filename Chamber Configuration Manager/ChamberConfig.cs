@@ -31,13 +31,13 @@ namespace Chamber_Configuration_Manager
         {
             IEnumerator attrEnum;
             XmlNode xmlNode;
-            string []attribute;
+            string[] attribute;
             int i = 0;
 
             attrEnum = node.GetEnumerator();
             attrEnum.MoveNext();
             xmlNode = (XmlNode)attrEnum.Current;
-            attribute = new string[2] { "chamberId", xmlNode.InnerText};
+            attribute = new string[2] { "chamberId", xmlNode.InnerText };
             chamberAttributes.Add(attribute);
             attribute = new string[2] { "toolId", "" };
             chamberAttributes.Add(attribute);
@@ -47,13 +47,10 @@ namespace Chamber_Configuration_Manager
             while (attrEnum.MoveNext())
             {
                 xmlNode = (XmlNode)attrEnum.Current;
-                attribute =  new string[2]{ attributes[i++][0], xmlNode.InnerText};
+                attribute = new string[2] { attributes[i++][0], xmlNode.InnerText };
                 chamberAttributes.Add(attribute);
             }
         }
-
-
-        
     }
 
 

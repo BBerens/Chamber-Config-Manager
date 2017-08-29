@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.IO;
 using System.Collections;
 
 namespace Chamber_Configuration_Manager
@@ -21,17 +22,21 @@ namespace Chamber_Configuration_Manager
         public Form1()
         {
             
-            
-            importParse("C:\\Users\\DrStrange\\Source\\Repos\\Chamber-Config-Manager\\Chamber Configuration Manager\\Chamber Configurations.xml", chamberList, parameterList); 
-            
- 
             InitializeComponent();
-            columnAttributes = drawTable(chamberList);
             
             
         }
 
-        private void importParse(string filepath, List<ChamberConfig> chamberList, List<List<string>> parameterList)
+        public Form1(Stream instream)
+        {
+
+            InitializeComponent();
+            importParse(instream, chamberList, parameterList);
+            columnAttributes = drawTable(chamberList);
+
+        }
+
+        private void importParse(Stream instream , List<ChamberConfig> chamberList, List<List<string>> parameterList)
         {
             XmlDocument importFile = new XmlDocument();
             XmlNode root, node, child, chamberNode;
@@ -40,7 +45,7 @@ namespace Chamber_Configuration_Manager
             List<string> paramValueList;
             List<string> attributeStr;
 
-            importFile.Load(filepath);
+            importFile.Load(instream);
             root = importFile.DocumentElement;
             paramEnum = root["Parameters"].GetEnumerator();
             while(paramEnum.MoveNext())
@@ -70,9 +75,65 @@ namespace Chamber_Configuration_Manager
             parameterList.Insert(1, attributeStr);
             attributeStr = new List<string> { "chamberLoc", "" };
             parameterList.Insert(2, attributeStr);
-
-
         }
+
+        private void writeXML(Stream instream, List<ChamberConfig> chamberList)
+        {
+            XmlWriter writer = XmlWriter.Create(instream);
+            writer.WriteStartDocument();
+            writer.WriteWhitespace("\n");
+            writer.WriteStartElement("Chambers");
+            writer.WriteWhitespace("\n");
+            foreach(ChamberConfig chamber in chamberList)
+            {
+                writer.WriteWhitespace("\t");
+                writer.WriteStartElement("Chamber");
+                writer.WriteWhitespace("\n");
+                foreach(string[] attribute in chamber.chamberAttributes)
+                {
+                    writer.WriteWhitespace("\t\t");
+                    writer.WriteElementString(attribute[0], attribute[1]);
+                    writer.WriteWhitespace("\n");
+                }
+                writer.WriteWhitespace("\t");
+                writer.WriteEndElement();
+                writer.WriteWhitespace("\n");
+            }
+            writer.WriteWhitespace("\t");
+            writer.WriteEndElement();
+            writer.WriteEndDocument();
+        }
+
+        private void openFile()
+        {
+            Stream myStream = null;
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            openFileDialog1.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
+            openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    if ((myStream = openFileDialog1.OpenFile()) != null)
+                    {
+                        using (myStream)
+                        {
+                            importParse(myStream, chamberList, parameterList);
+                            columnAttributes = drawTable(chamberList);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -255,6 +316,32 @@ namespace Chamber_Configuration_Manager
             dataGridView1.Refresh();
             return columnAttributes;
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Stream myStream;
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+            saveFileDialog1.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 1;
+            saveFileDialog1.RestoreDirectory = true;
+            saveFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if ((myStream = saveFileDialog1.OpenFile()) != null)
+                {
+                    writeXML(myStream, chamberList);
+                    myStream.Close();
+                }
+            }
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openFile();
         }
 
 
