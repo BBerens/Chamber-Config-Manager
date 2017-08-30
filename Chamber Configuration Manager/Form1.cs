@@ -18,7 +18,8 @@ namespace Chamber_Configuration_Manager
         List<ChamberConfig> chamberList = new List<ChamberConfig>();
         List<List<string>> parameterList = new List<List<string>>();
         List<string> columnAttributes;
-
+        Stream streamFile;
+        
         public Form1()
         {
             
@@ -47,14 +48,16 @@ namespace Chamber_Configuration_Manager
 
             importFile.Load(instream);
             root = importFile.DocumentElement;
+
             paramEnum = root["Parameters"].GetEnumerator();
-            while(paramEnum.MoveNext())
+            // parse parameters and their values to populate parameter list
+            while (paramEnum.MoveNext())
             {
                 paramValueList = new List<string>();
                 node = (XmlNode)paramEnum.Current;
                 paramValueList.Add(node.Attributes["name"].Value);
                 valueEnum = node.FirstChild.GetEnumerator();
-                while(valueEnum.MoveNext())
+                while (valueEnum.MoveNext())
                 {
                     child = (XmlNode)valueEnum.Current;
                     paramValueList.Add(child.InnerText);
@@ -62,51 +65,95 @@ namespace Chamber_Configuration_Manager
                 parameterList.Add(paramValueList);
             }
 
-            chamberEnum = root["Testset"].GetEnumerator();
-            while (chamberEnum.MoveNext())
+            // parse 
+            if (root.Name == "System")
             {
-                chamberNode = (XmlNode)chamberEnum.Current;
-                newChamber = new ChamberConfig(chamberNode, parameterList);
-                chamberList.Add(newChamber);
+                chamberEnum = root["Testset"].GetEnumerator();
+                while (chamberEnum.MoveNext())
+                {
+                    chamberNode = (XmlNode)chamberEnum.Current;
+                    newChamber = new ChamberConfig(chamberNode, parameterList);
+                    chamberList.Add(newChamber);
+                }
+                attributeStr = new List<string> { "chamberId" };
+                parameterList.Insert(0, attributeStr);
+                attributeStr = new List<string> { "toolId", "" };
+                parameterList.Insert(1, attributeStr);
+                attributeStr = new List<string> { "chamberLoc", "" };
+                parameterList.Insert(2, attributeStr);
             }
-            attributeStr = new List<string> { "chamberId" };
-            parameterList.Insert(0, attributeStr);
-            attributeStr = new List<string>{"toolId", ""};
-            parameterList.Insert(1, attributeStr);
-            attributeStr = new List<string> { "chamberLoc", "" };
-            parameterList.Insert(2, attributeStr);
+            else if(root.Name == "Chambers")
+            {
+                chamberEnum = root["Chamber"].GetEnumerator();
+                while (chamberEnum.MoveNext())
+                {
+                    chamberNode = (XmlNode)chamberEnum.Current;
+                    newChamber = new ChamberConfig(chamberNode, parameterList);
+                    chamberList.Add(newChamber);
+                }
+            }
         }
+
+
 
         private void writeXML(Stream instream, List<ChamberConfig> chamberList)
         {
-            XmlWriter writer = XmlWriter.Create(instream);
-            writer.WriteStartDocument();
-            writer.WriteWhitespace("\n");
-            writer.WriteStartElement("Chambers");
-            writer.WriteWhitespace("\n");
-            foreach(ChamberConfig chamber in chamberList)
+            using (XmlWriter writer = XmlWriter.Create(instream))
             {
-                writer.WriteWhitespace("\t");
-                writer.WriteStartElement("Chamber");
+                writer.WriteStartDocument();
                 writer.WriteWhitespace("\n");
-                foreach(string[] attribute in chamber.chamberAttributes)
+                writer.WriteStartElement("CCM");
+                writer.WriteWhitespace("\n\t");
+                writer.WriteStartElement("Parameters");
+                writer.WriteWhitespace("\n");
+                foreach(List<string> attribute in parameterList)
+                {
+                    int i = 1;
+                    writer.WriteWhitespace("\t\t");
+                    writer.WriteStartElement(attribute[0]);
+                    writer.WriteWhitespace("\n");
+                    while(i < attribute.Count)
+                    {
+                        writer.WriteWhitespace("\t\t\t");
+                        writer.WriteElementString("Value", attribute[i++]);
+                        writer.WriteWhitespace("\n");
+                    }
+                    writer.WriteWhitespace("\t\t");
+                    writer.WriteEndElement();
+                    writer.WriteWhitespace("\n");
+                    
+                }
+                writer.WriteWhitespace("\t");
+                writer.WriteEndElement();
+                writer.WriteWhitespace("\n\t");
+
+                writer.WriteStartElement("Chambers");
+                writer.WriteWhitespace("\n");
+                foreach (ChamberConfig chamber in chamberList)
                 {
                     writer.WriteWhitespace("\t\t");
-                    writer.WriteElementString(attribute[0], attribute[1]);
+                    writer.WriteStartElement("Chamber");
+                    writer.WriteWhitespace("\n");
+                    foreach (string[] attribute in chamber.chamberAttributes)
+                    {
+                        writer.WriteWhitespace("\t\t\t");
+                        writer.WriteElementString(attribute[0], attribute[1]);
+                        writer.WriteWhitespace("\n");
+                    }
+                    writer.WriteWhitespace("\t\t");
+                    writer.WriteEndElement();
                     writer.WriteWhitespace("\n");
                 }
                 writer.WriteWhitespace("\t");
                 writer.WriteEndElement();
                 writer.WriteWhitespace("\n");
+                writer.WriteEndElement();
+                writer.WriteEndDocument();
             }
-            writer.WriteWhitespace("\t");
-            writer.WriteEndElement();
-            writer.WriteEndDocument();
         }
 
-        private void openFile()
+        private Stream openFile(Stream myStream)
         {
-            Stream myStream = null;
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
             openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -118,20 +165,17 @@ namespace Chamber_Configuration_Manager
             {
                 try
                 {
-                    if ((myStream = openFileDialog1.OpenFile()) != null)
-                    {
-                        using (myStream)
-                        {
-                            importParse(myStream, chamberList, parameterList);
-                            columnAttributes = drawTable(chamberList);
-                        }
-                    }
+                    myStream = openFileDialog1.OpenFile();
+                    return myStream;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                    return myStream;
                 }
             }
+            else
+                return myStream;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -314,11 +358,17 @@ namespace Chamber_Configuration_Manager
                 dataTable.Rows.Add(row);
             }
             dataGridView1.Refresh();
+            groupBox1.Enabled = true;
             return columnAttributes;
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openFile(streamFile);
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Stream myStream;
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -336,14 +386,13 @@ namespace Chamber_Configuration_Manager
                     myStream.Close();
                 }
             }
-            
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void aCTSOutputToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openFile();
+            streamFile = openFile(streamFile);
+            importParse(streamFile, chamberList, parameterList);
+            columnAttributes = drawTable(chamberList);
         }
-
-
     }
 }
