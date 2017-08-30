@@ -25,7 +25,6 @@ namespace Chamber_Configuration_Manager
             
             InitializeComponent();
             
-            
         }
 
         public Form1(Stream instream)
@@ -48,6 +47,8 @@ namespace Chamber_Configuration_Manager
 
             importFile.Load(instream);
             root = importFile.DocumentElement;
+            parameterList.Clear();
+            chamberList.Clear();
 
             paramEnum = root["Parameters"].GetEnumerator();
             // parse parameters and their values to populate parameter list
@@ -69,22 +70,23 @@ namespace Chamber_Configuration_Manager
             if (root.Name == "System")
             {
                 chamberEnum = root["Testset"].GetEnumerator();
+                attributeStr = new List<string> { "chamberId", ""};
+                parameterList.Insert(0, attributeStr);
+                attributeStr = new List<string> { "toolId", "" };
+                parameterList.Insert(1, attributeStr);
+                attributeStr = new List<string> { "chamberLoc", "" };
+                parameterList.Insert(2, attributeStr);
                 while (chamberEnum.MoveNext())
                 {
                     chamberNode = (XmlNode)chamberEnum.Current;
                     newChamber = new ChamberConfig(chamberNode, parameterList);
                     chamberList.Add(newChamber);
                 }
-                attributeStr = new List<string> { "chamberId" };
-                parameterList.Insert(0, attributeStr);
-                attributeStr = new List<string> { "toolId", "" };
-                parameterList.Insert(1, attributeStr);
-                attributeStr = new List<string> { "chamberLoc", "" };
-                parameterList.Insert(2, attributeStr);
+
             }
-            else if(root.Name == "Chambers")
+            else if(root.Name == "CCM")
             {
-                chamberEnum = root["Chamber"].GetEnumerator();
+                chamberEnum = root["Chambers"].GetEnumerator();
                 while (chamberEnum.MoveNext())
                 {
                     chamberNode = (XmlNode)chamberEnum.Current;
@@ -110,20 +112,26 @@ namespace Chamber_Configuration_Manager
                 {
                     int i = 1;
                     writer.WriteWhitespace("\t\t");
-                    writer.WriteStartElement(attribute[0]);
+                    writer.WriteStartElement("Parameter");
+                    writer.WriteAttributeString("name", attribute[0]);
+                    writer.WriteWhitespace("\n");
+                    writer.WriteWhitespace("\t\t\t");
+                    writer.WriteStartElement("Values");
                     writer.WriteWhitespace("\n");
                     while(i < attribute.Count)
                     {
-                        writer.WriteWhitespace("\t\t\t");
+                        writer.WriteWhitespace("\t\t\t\t");
                         writer.WriteElementString("Value", attribute[i++]);
                         writer.WriteWhitespace("\n");
                     }
-                    writer.WriteWhitespace("\t\t");
+                    writer.WriteWhitespace("\t\t\t");
+                    writer.WriteEndElement();
+                    writer.WriteWhitespace("\n");
                     writer.WriteEndElement();
                     writer.WriteWhitespace("\n");
                     
                 }
-                writer.WriteWhitespace("\t");
+                writer.WriteWhitespace("\t\t");
                 writer.WriteEndElement();
                 writer.WriteWhitespace("\n\t");
 
@@ -337,6 +345,8 @@ namespace Chamber_Configuration_Manager
             DataRow row;
             List<string> columnAttributes = new List<string>();
 
+            dataGridView1.DataSource = null;
+
             foreach (List<string> attribute in parameterList)
                 columnAttributes.Add(attribute[0]);
 
@@ -361,11 +371,6 @@ namespace Chamber_Configuration_Manager
             groupBox1.Enabled = true;
             return columnAttributes;
             
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            openFile(streamFile);
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)

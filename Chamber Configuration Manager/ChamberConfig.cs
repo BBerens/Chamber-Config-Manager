@@ -32,17 +32,47 @@ namespace Chamber_Configuration_Manager
             IEnumerator attrEnum;
             XmlNode xmlNode;
             string[] attribute;
-            int i = 0;
+            int i = 3;
 
             attrEnum = node.GetEnumerator();
             attrEnum.MoveNext();
             xmlNode = (XmlNode)attrEnum.Current;
-            attribute = new string[2] { "chamberId", xmlNode.InnerText };
-            chamberAttributes.Add(attribute);
-            attribute = new string[2] { "toolId", "" };
-            chamberAttributes.Add(attribute);
-            attribute = new string[2] { "chamberLoc", "" };
-            chamberAttributes.Add(attribute);
+            if (xmlNode.Name != "chamberId")
+            {
+                attribute = new string[2] { "chamberId", xmlNode.InnerText };
+                chamberAttributes.Add(attribute);
+            }
+            else
+            {
+                attribute = new string[2] { attributes[0][0], xmlNode.InnerText };
+                chamberAttributes.Add(attribute);
+                attrEnum.MoveNext();
+            }
+            if (xmlNode.Name != "toolId")
+            {
+                attribute = new string[2] { "toolId", "" };
+                chamberAttributes.Add(attribute);
+            }
+            else
+            {
+                
+                xmlNode = (XmlNode)attrEnum.Current;
+                attribute = new string[2] { attributes[1][0], xmlNode.InnerText };
+                chamberAttributes.Add(attribute);
+                attrEnum.MoveNext();
+            }
+            if (xmlNode.Name != "chamberLoc")
+            {
+                attribute = new string[2] { "chamberLoc", "" };
+                chamberAttributes.Add(attribute);
+            }
+            else
+            {
+                xmlNode = (XmlNode)attrEnum.Current;
+                attribute = new string[2] { attributes[2][0], xmlNode.InnerText };
+                chamberAttributes.Add(attribute);
+                attrEnum.MoveNext();
+            }
 
             while (attrEnum.MoveNext())
             {
