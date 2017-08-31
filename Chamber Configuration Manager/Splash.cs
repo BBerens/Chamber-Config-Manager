@@ -57,6 +57,7 @@ namespace Chamber_Configuration_Manager
         {
             Form1 form1 = new Form1();
             form1.Show();
+            this.Hide();
         }
     }
 }

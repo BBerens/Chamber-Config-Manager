@@ -41,12 +41,15 @@ namespace Chamber_Configuration_Manager
             {
                 attribute = new string[2] { "chamberId", xmlNode.InnerText };
                 chamberAttributes.Add(attribute);
+                attrEnum.MoveNext();
+                xmlNode = (XmlNode)attrEnum.Current;
             }
             else
             {
                 attribute = new string[2] { attributes[0][0], xmlNode.InnerText };
                 chamberAttributes.Add(attribute);
                 attrEnum.MoveNext();
+                xmlNode = (XmlNode)attrEnum.Current;
             }
             if (xmlNode.Name != "toolId")
             {
@@ -55,11 +58,10 @@ namespace Chamber_Configuration_Manager
             }
             else
             {
-                
-                xmlNode = (XmlNode)attrEnum.Current;
                 attribute = new string[2] { attributes[1][0], xmlNode.InnerText };
                 chamberAttributes.Add(attribute);
                 attrEnum.MoveNext();
+                xmlNode = (XmlNode)attrEnum.Current;
             }
             if (xmlNode.Name != "chamberLoc")
             {
@@ -68,18 +70,19 @@ namespace Chamber_Configuration_Manager
             }
             else
             {
-                xmlNode = (XmlNode)attrEnum.Current;
                 attribute = new string[2] { attributes[2][0], xmlNode.InnerText };
                 chamberAttributes.Add(attribute);
                 attrEnum.MoveNext();
+                xmlNode = (XmlNode)attrEnum.Current;
             }
 
-            while (attrEnum.MoveNext())
+            do
             {
                 xmlNode = (XmlNode)attrEnum.Current;
                 attribute = new string[2] { attributes[i++][0], xmlNode.InnerText };
                 chamberAttributes.Add(attribute);
-            }
+            } while (attrEnum.MoveNext()) ;
+
         }
     }
 

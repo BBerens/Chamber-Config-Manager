@@ -398,6 +398,28 @@ namespace Chamber_Configuration_Manager
             streamFile = openFile(streamFile);
             importParse(streamFile, chamberList, parameterList);
             columnAttributes = drawTable(chamberList);
+            streamFile.Close();
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.Refresh();
+            dataGridView1.Enabled = false;
+            groupBox1.Enabled = false;
+            parameterList.Clear();
+            chamberList.Clear();
+        }
+
+        private void dataGridView1_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+
+            
+        }
+
+        private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.Aquamarine;
         }
     }
 }
